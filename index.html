@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task |Sidebar </title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="main">
+            <span style="margin-left: 20px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div id="logo-one">
+                <h2>Logo</h2>
+            </div>
+            <div class="searchbar">
+                <label for=""></label>
+                <input type="text" id="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-address-card"></i>
+            </div>
+            <div class="icon2">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="icon3">
+                <img src="./assets/image/male_boy_person_people_avatar_icon_159358.png">
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./assets/image/male_boy_person_people_avatar_icon_159358.png">
+        <h2>Menu</h2>
+        <a href="deshborad.html">Deshborad</a>
+        <a href="shortcut.html">Shortcuts</a>
+        <a href="servier.html">Services</a>
+        <a href="contect.html">Contact</a>
+        <a href="login.html">Login</a>
+    </div>
+    <div id="maincontainer">
+        <div class="main-up">
+            <div class="main-side">
+                <div class="paragraph">
+                    <p>Total Income</p>
+                </div>
+                <div class="heading">
+                    <h3>$4,000</h3>
+                </div>
+                <div class="para">
+                    <p>Saved 25%</p>
+                </div>
+            </div>
+            <div class="main-side">
+                <div class="paragraph">
+                    <p>Total Expences</p>
+                </div>
+                <div class="heading">
+                    <h3>$3,200</h3>
+                </div>
+                <div class="para">
+                    <p>Saved 25%</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-up">
+            <div class="main-side">
+                <div class="paragraph">
+                    <p>Cash on Hand</p>
+                </div>
+                <div class="heading">
+                    <h3>$1,000</h3>
+                </div>
+                <div class="para">
+                    <p>Saved 25%</p>
+                </div>
+            </div>
+            <div class="main-side">
+                <div class="paragraph">
+                    <p>Net: Profit Margin</p>
+                </div>
+                <div class="heading">
+                    <h3>$2,500</h3>
+                </div>
+                <div class="para">
+                    <p>Saved 25%</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <canvas id="myChart" width="600" height="150"></canvas>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+    
+            let ctx = document.getElementById("myChart");
+            let myChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["January", "February", "March", "April", "May", "June", "July", "August"],
+                    datasets: [{
+                        label: "Selas",
+                        data: [10, 30, 40, 60, 20, 70, 90],
+                        backgroundColor: ["red", "blue", "green", "blue", "red", "blue", "royalblue", "royalblue"],
+                        borderWidth: 3,
+    
+                    }],
+                },
+                Option: {
+                    responsive: false,
+                    layout: {
+                        padding: {
+                            top: 50,
+                            right: 0,
+                            left: 50,
+                            bottom: 0,
+    
+                        },
+                    },
+                },
+            });
+        </script>
+    </div>
+   
+
+    <script>
+        //     alert("hello world");
+
+        //     console.log('this is a new ');
+        //     console.log('website is good working');
+        //     console.log('high speed');
+
+        //    let a = prompt('Enter your name');
+        //    let istrue = confirm('Are you want a internet high speed');
+
+        //    if(istrue){
+        //         console.log('computer is connect internet');
+        //    }else{
+        //         console.log('computer is Not connect internet');
+        //    }
+   
+
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("maincontainer").style.marginLeft = "250px";
+            document.getElementById("logo-one").style.marginLeft = "230px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("maincontainer").style.marginLeft = "0";
+            document.getElementById("logo-one").style.marginLeft = "80px";
+
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  -->

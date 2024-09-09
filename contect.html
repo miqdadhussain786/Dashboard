@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contect</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="main">
+            <span style="margin-left: 20px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div id="logo-one">
+                <h2>Logo</h2>
+            </div>
+            <div class="searchbar">
+                <label for=""></label>
+                <input type="text" id="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-address-card"></i>
+            </div>
+            <div class="icon2">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="icon3">
+                <img src="./assets/image/male_boy_person_people_avatar_icon_159358.png">
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./assets/image/male_boy_person_people_avatar_icon_159358.png">
+        <h2>Menu</h2>
+        <a href="deshborad.html">Deshborad</a>
+        <a href="shortcut.html">Shortcuts</a>
+        <a href="servier.html">Services</a>
+        <a href="contect.html">Contact</a>
+        <a href="login.html">Login</a>
+    </div>
+    <div id="maincontainer">
+        <div class="heading-top">
+            <h1>Profile</h1>
+        </div>
+        <div class="main-profile">
+            <div class="main-top">
+                <div class="main-contact">
+                    <div class="image-contact">
+                    </div>
+                    <div class="Username">
+                        <h2>Miqdad Hussain</h2>
+                    </div>
+                    <div class="location">
+                        <p><i class="fa-solid fa-location-dot"></i>Main Qasimabad Road phase 1 Hyderabad</p>
+                    </div>
+                    <div class="main-two">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i>5.0(1)</p>
+                        </div>
+                        <div class="button-con">
+                            <a href="#Sponsored">Sponsored</a>
+                        </div>
+                    </div>
+                    <div class="button-down">
+                        <a href="#Close Account">Close Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-all">
+                <div class="heading-last">
+                    <h3>Profile</h3>
+                </div>
+                <div class="userinto">
+                    <p>User Information</p>
+                </div>
+                <div class="form">
+                    <form>
+                        <label for="Name">Name</label>
+                        <input type="text" id="Miqdad Hussain" placeholder="Miqdad Hussain">
+                        <label for="Email">Email</label>
+                        <input type="text" id="miqdadhussain54@gmail.com" placeholder="miqdadhussain54@gmail.com">
+                        <label for="Phone">Phone</label>
+                        <input type="number" id="03078373776" placeholder="03078373776">
+                    </form>
+                </div>
+                <div class="button-profile">
+                    <a href="#Save Now">Save Now</a>
+                </div>
+                <div class="heading-pwd">
+                    <p>Password</p>
+                </div>
+                <div class="Password">
+                    <form>
+                        <label for="Name">Current Password</label>
+                        <input type="password" id="********" placeholder="*********">
+                        <label for="Email">New Password</label>
+                        <input type="text" id="New Password" placeholder="New Password">
+                        <label for="Phone">confirm New Password</label>
+                        <input type="number" id="confirm New Password" placeholder="confirm New Password">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //     alert("hello world");
+
+        //     console.log('this is a new ');
+        //     console.log('website is good working');
+        //     console.log('high speed');
+
+        //    let a = prompt('Enter your name');
+        //    let istrue = confirm('Are you want a internet high speed');
+
+        //    if(istrue){
+        //         console.log('computer is connect internet');
+        //    }else{
+        //         console.log('computer is Not connect internet');
+        //    }
+
+
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("maincontainer").style.marginLeft = "250px";
+            document.getElementById("logo-one").style.marginLeft = "230px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("maincontainer").style.marginLeft = "0";
+            document.getElementById("logo-one").style.marginLeft = "80px";
+
+        }
+
+    </script>
+</body>
+
+</html>

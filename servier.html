@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="main">
+            <span style="margin-left: 20px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div id="logo-one">
+                <h2>Logo</h2>
+            </div>
+            <div class="searchbar">
+                <label for=""></label>
+                <input type="text" id="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-address-card"></i>
+            </div>
+            <div class="icon2">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="icon3">
+                <img src="./assets/image/male_boy_person_people_avatar_icon_159358.png">
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./assets/image/male_boy_person_people_avatar_icon_159358.png">
+        <h2>Menu</h2>
+        <a href="deshborad.html">Deshborad</a>
+        <a href="shortcut.html">Shortcuts</a>
+        <a href="servier.html">Services</a>
+        <a href="contect.html">Contact</a>
+        <a href="login.html">Login</a>
+    </div>
+    <div id="maincontainer">
+        <div class="heading-ser">
+            <h2>Services</h2>
+        </div>
+        <div class="text-ser">
+            <p>Services are mainly seen as activities that people can buy and sell. They are tightly associated with
+                goods but, unlike them, services cannot be stored and transported. It can also be said that they exist
+                only within a particular period because they can be observed only when being performed. Services are
+                offered by different organizations just like ordinary goods. The extent to which the focus is put on
+                them is defined by the peculiarities of a particular company. Based on a tangible-intangible continuum,
+                professionals identify such types of offerings as:Today people are living in the era of consumption that
+                is associated with the desire of the representatives of the general public to buy the things they want
+                to have. They emphasize the fact that there is no necessity already to try hard to reach some unique
+                products or to do something without any external help because it is much easier to obtain various
+                offerings with the help of third parties.Pure tangible good (sugar) Tangible good with accompanying
+                services (computer repair) Hybrid (cafe) Major service with minor goods and services (flight) Pure
+                service (psychotherapy) Services are mainly characterized by their: Intangibility. Customers are not
+                able to perceive services with their senses (for instance, it is impossible to see them or hear) before
+                they are bought. That is why some people tend to question the quality of particular services. However,
+                such uncertainty can be overcome if organizations focus on the ways they can ensure potential clients
+                that the place, material, price, and other critical constitutes are reasonable and good enough.
+                Organizations should manage the evidence for abstract offers so that they appeal to customers.</p>
+        </div>
+    </div>
+    <script>
+        //     alert("hello world");
+
+        //     console.log('this is a new ');
+        //     console.log('website is good working');
+        //     console.log('high speed');
+
+        //    let a = prompt('Enter your name');
+        //    let istrue = confirm('Are you want a internet high speed');
+
+        //    if(istrue){
+        //         console.log('computer is connect internet');
+        //    }else{
+        //         console.log('computer is Not connect internet');
+        //    }
+
+
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("maincontainer").style.marginLeft = "250px";
+            document.getElementById("logo-one").style.marginLeft = "230px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("maincontainer").style.marginLeft = "0";
+            document.getElementById("logo-one").style.marginLeft = "80px";
+
+        }
+
+    </script>
+</body>
+
+</html>
